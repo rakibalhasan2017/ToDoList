@@ -30,3 +30,15 @@
 .eachitem li {
     list-style-type: none;
 }
+
+.deleteIcon {
+    cursor: pointer;
+    font-size: 18px; /* Adjust size of the icon */
+    color: #888; /* Light gray for the delete icon */
+    transition: color 0.3s ease;
+    margin-left: 15px; /* Adds space between text and icon */
+}
+
+.deleteIcon:hover {
+    color: #e74c3c; /* Red color on hover for emphasis */
+}
