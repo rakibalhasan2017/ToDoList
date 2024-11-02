@@ -1,5 +1,8 @@
+import styles from './todoitem.module.css'
 export default function({todo}) {
     return (
-        <h3><li>{todo}</li></h3>
+        <div className= {styles.eachitem} >
+            <h3><li>{todo}</li></h3>
+        </div>
     )
 }

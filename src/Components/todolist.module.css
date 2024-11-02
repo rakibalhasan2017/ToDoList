@@ -1,0 +1,36 @@
+/* todolist.module.css */
+
+.list {
+    margin-top: 20px; /* Space between form and list */
+    padding: 20px; /* Padding around the entire list */
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; /* Center the list */
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 12px; /* Rounded corners for the container */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Shadow around the entire container */
+}
+
+.list ol {
+    list-style: none; /* Remove default numbering */
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    background-color: #ffffff; /* White background for each item */
+    margin: 8px 0; /* Space between each item */
+    padding: 15px 20px; /* Padding inside each item */
+    border-radius: 8px; /* Rounded corners for each item */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333; /* Dark gray text */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover */
+}
+
+.list-item:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}

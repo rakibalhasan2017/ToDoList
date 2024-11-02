@@ -1,0 +1,32 @@
+/* todoitem.module.css */
+
+.eachitem {
+    background-color: #ffffff;
+    margin: 8px 0;
+    padding: 15px 20px;
+    border-radius: 8px; /* Rounded corners for the entire border */
+    border: 1px solid #ddd; /* Light border around each item */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.eachitem h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+
+.eachitem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.eachitem li {
+    list-style-type: none;
+}
