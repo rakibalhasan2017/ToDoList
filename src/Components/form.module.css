@@ -1,0 +1,64 @@
+/* form.module.css */
+
+.moderninput {
+    width: 100%;
+    max-width: 300px; /* Increased width for a more prominent look */
+    padding: 14px 18px; /* More padding for a comfortable, prominent input field */
+    font-size: 18px; /* Larger font size */
+    color: #333; /* Dark gray text */
+    background-color: #f7f7f9; /* Very light gray background */
+    border: none; /* Remove default border */
+    border-radius: 12px; /* Larger rounded corners */
+    outline: none;
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+}
+
+.moderninput:focus {
+    background-color: #ffffff; /* White background on focus */
+    box-shadow: 0px 4px 12px rgba(76, 175, 80, 0.4); /* Greenish outer glow on focus */
+}
+
+.moderninput::placeholder {
+    color: #999; /* Subtle gray color for placeholder text */
+    font-style: italic;
+}
+
+/* Adjust the form container to center everything */
+.todoform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow for the form */
+}
+
+/* form.module.css */
+
+.modernbutton {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Dark text for contrast */
+    background-color: #f2f2f2; /* Light gray background */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.modernbutton:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.modernbutton:active {
+    background-color: #d1d1d1; /* Even darker gray on click */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow on click */
+}

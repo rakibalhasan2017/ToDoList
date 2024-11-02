@@ -1,4 +1,6 @@
 import { useState } from "react"
+import styles from './form.module.css'
+
 export default function Form({todos, seTtodos}) {
     const [item, seTitem] = useState("");
     function handleclick(event) {
@@ -7,14 +9,17 @@ export default function Form({todos, seTtodos}) {
         seTitem("");
     }
     return (
-        <form>
-        <input
+        <form className={styles.todoform} >
+        <input className={styles.moderninput}
          type="text"
          value = {item}
          onChange={(event) => {seTitem(event.target.value)}}
+         placeholder="enter the item"
          />
-         <p>value is: {item}</p>
-         <button onClick={handleclick} type="submit">
+         <button
+          onClick={handleclick}
+           type="submit"
+           className={styles.modernbutton} >
           Add me
          </button>
     </form>
