@@ -42,3 +42,7 @@
 .deleteIcon:hover {
     color: #e74c3c; /* Red color on hover for emphasis */
 }
+
+.completed {
+    text-decoration: line-through;
+}

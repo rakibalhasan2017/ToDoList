@@ -2,18 +2,18 @@ import { useState } from "react"
 import styles from './form.module.css'
 
 export default function Form({todos, seTtodos}) {
-    const [item, seTitem] = useState("");
+    const [item, seTitem] = useState({name: "", done: false});
     function handleclick(event) {
         event.preventDefault();
         seTtodos([...todos, item]);
-        seTitem("");
+        seTitem({name: "", done: false});
     }
     return (
         <form className={styles.todoform} >
         <input className={styles.moderninput}
          type="text"
-         value = {item}
-         onChange={(event) => {seTitem(event.target.value)}}
+         value = {item.name}
+         onChange={(event) => {seTitem({name: event.target.value, done: false})}}
          placeholder="enter the item"
          />
          <button
